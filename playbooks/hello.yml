@@ -1,0 +1,7 @@
+---
+- name: Deploy hello
+  hosts: hello
+  tasks:
+    - name: Include hello
+      ansible.builtin.import_role:
+        name: hello

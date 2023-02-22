@@ -1,0 +1,6 @@
+---
+- name: Template file
+  ansible.builtin.template:
+    src: hello.sh.j2
+    dest: "{{ ansible_env.HOME }}/hello.sh"
+    mode: 0755
